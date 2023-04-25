@@ -61,15 +61,16 @@ body {
 .question-card p {
   width: 75%;
   margin: 30px 20px 20px 30px;
-  font-size: xx-large;
+  font-size: x-large;
   font-family: Arial;
   color: var(--text-color);
+  text-align: center;
 }
 
 .question-card__answer-button {
   width: 50%;
   border-radius: 10px;
-  font-size: x-large;
+  font-size: slarge;
   font-family: Arial;
 
   color: var(--text-color);
@@ -83,7 +84,7 @@ body {
 
 .question-card__answer-button:active {
   /* width: 48%; */
-  transform: scale(0.9);
+  transform: scale(0.95);
   box-shadow: 0px 0px 5px -100% var(--highlight);
   background-color: var(--secondary);
 }
@@ -104,9 +105,25 @@ body {
   border-radius: 10px;
   font-size: medium;
   font-family: Arial;
+  text-align: center;
 
   color: var(--text-color);
   background-color: var(--tertiary);
+}
+
+.question-card__bookmark-icon {
+  height: 75px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.question-card__bookmark-icon--unselected {
+  fill: var(--paragraph-color);
+}
+
+.question-card__bookmark-icon--selected {
+  fill: var(--highlight);
 }
 
 /* 
