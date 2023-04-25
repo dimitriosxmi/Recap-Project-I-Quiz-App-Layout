@@ -48,7 +48,7 @@ body {
 }
 
 .question-card {
-  height: 300px;
+  /* height: 30px; */
   margin: 20px 10px 0px 10px;
   padding: 20px 20px 20px 20px;
   border-radius: 10px;
@@ -58,7 +58,7 @@ body {
   box-shadow: 0px 5px 7px 5px var(--paragraph-color);
 }
 
-.question-card p {
+.question-card__question-text {
   width: 75%;
   margin: 30px 20px 20px 30px;
   font-size: x-large;
@@ -67,15 +67,35 @@ body {
   text-align: center;
 }
 
+.question-card_answer-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.question-card__answer-text {
+  width: 75%;
+  margin: -30px 20px 50px 30px;
+  font-size: large;
+  color: var(--highlight);
+  text-align: center;
+}
+
 .question-card__answer-button {
   width: 50%;
   border-radius: 10px;
-  font-size: slarge;
+  margin-bottom: 50px;
+  font-size: large;
   font-family: Arial;
 
   color: var(--text-color);
   background-color: var(--button-color);
   box-shadow: 0px 0px 5px -100% var(--highlight);
+}
+
+.question-card__answer-hide {
+  display: none;
 }
 
 .question-card__answer-button:hover {
