@@ -19,6 +19,10 @@ body {
   background-color: var(--text-color);
 }
 
+.main {
+  margin-bottom: 100px;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -147,6 +151,34 @@ body {
 }
 
 .question-card__bookmark-icon--selected {
+  fill: var(--highlight);
+}
+
+.footer-navbar {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+  background-color: var(--bg-color);
+  padding: 20px 10px 0px 10px;
+}
+
+.footer-navbar__option {
+  width: 60px;
+}
+
+.footer-navbar__option-icon {
+  fill: var(--paragraph-color);
+}
+
+.footer-navbar__option-icon--selected {
   fill: var(--highlight);
 }
 
