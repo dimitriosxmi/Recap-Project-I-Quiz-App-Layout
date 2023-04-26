@@ -53,6 +53,9 @@ body {
   padding: 20px 20px 20px 20px;
   border-radius: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   background-color: var(--bg-color);
   box-shadow: 0px 5px 7px 5px var(--paragraph-color);
@@ -76,7 +79,7 @@ body {
 
 .question-card__answer-text {
   width: 75%;
-  margin: -30px 20px 50px 30px;
+  margin: 0px 20px 20px 30px;
   font-size: large;
   color: var(--highlight);
   text-align: center;
@@ -85,7 +88,7 @@ body {
 .question-card__answer-button {
   width: 50%;
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: large;
   font-family: Arial;
 
@@ -110,18 +113,19 @@ body {
 }
 
 .question-card__tag-boxes {
-  position: absolute;
+  /* position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 20px; */
 
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .question-card__tag-boxes p {
   padding: 5px;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 10px 10px;
   border-radius: 10px;
   font-size: medium;
   font-family: Arial;
