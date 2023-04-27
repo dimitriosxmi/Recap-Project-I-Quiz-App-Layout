@@ -65,6 +65,10 @@ body {
   box-shadow: 0px 5px 7px 5px var(--paragraph-color);
 }
 
+.question-card--hide {
+  display: none;
+}
+
 .question-card__question-text {
   width: 75%;
   margin: 30px 20px 20px 30px;
@@ -142,7 +146,7 @@ body {
 .question-card__bookmark-icon {
   height: 75px;
   position: absolute;
-  top: 0px;
+  top: 10px;
   right: 0px;
 }
 
@@ -150,8 +154,34 @@ body {
   fill: var(--paragraph-color);
 }
 
+.question-card__bookmark-icon--unselected:hover {
+  fill: var(--text-color);
+  outline-offset: -1.5rem;
+  outline: 2rem dotted var(--highlight);
+}
+
+.question-card__bookmark-icon--unselected:active {
+  fill: var(--tertiary);
+  outline: none;
+}
+
 .question-card__bookmark-icon--selected {
-  fill: var(--highlight);
+  fill: var(--button-color);
+}
+
+.question-card__bookmark-icon--selected:hover {
+  fill: var(--secondary);
+  outline-offset: -1.5rem;
+  outline: 2rem dotted var(--paragraph-color);
+}
+
+.question-card__bookmark-icon--selected:active {
+  fill: var(--tertiary);
+  outline: none;
+}
+
+.question-card__bookmark-icon--hide {
+  display: none;
 }
 
 .footer-navbar {
